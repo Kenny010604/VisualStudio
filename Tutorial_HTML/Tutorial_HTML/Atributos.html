@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atributos HTML</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Tutorial Diseño Web</h1>
+        <nav class="top-menu">
+            <ul>
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="introduccion.html">HTML</a></li>
+                <li><a href="#">CSS</a></li>
+                <li><a href="#">JAVA SCRIPT</a></li>
+                <li><a href="#">PHP</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <aside class="side-menu">
+        <h2>Menu De Opciones</h2>
+        <nav>
+            <ul>
+                <li><a href="inicio.html">INICIO HTML</a></li>
+                <li><a href="introduccion.html">INTRODUCCIÓN HTML</a></li>
+                <li><a href="editores.html">EDITORES HTML</a></li>
+                <li><a href="basico.html">HTML BASICO</a></li>
+                <li><a href="Elementos.html">ELEMENTOS HTML </a></li>
+                <li><a href="Atributos.html">ATRIBUTOS HTML</a></li>
+                <li><a href="Encabezado.html">ENCABEZADO HTML</a></li>
+            </ul>
+        </nav>
+    </aside>
+    
+    <main>
+        <h1>Atributos HTML</h1>
+        <p>Los atributos HTML proporcionan información adicional sobre los elementos HTML.</p>
+        
+        <h2>Atributos HTML</h2>
+        <ul>
+            <li>Todos los elementos HTML pueden tener atributos.</li>
+            <li>Los atributos proporcionan información adicional sobre los elementos.</li>
+            <li>Los atributos siempre se especifican en la etiqueta de inicio.</li>
+            <li>Los atributos generalmente vienen en pares nombre/valor como: <code>nombre="valor"</code>.</li>
+        </ul>
+        
+        <h2>El atributo href</h2>
+        <p>La etiqueta <code>&lt;a&gt;</code> define un hipervínculo. El atributo <code>href</code> especifica la URL de la página a la que lleva el vínculo:</p>
+        <pre>
+&lt;a href="https://www.w3schools.com"&gt;Visita W3Schools&lt;/a&gt;
+        </pre>
+        <p>Aprenderás más sobre los enlaces en nuestro capítulo <a href="enlaces.html">Enlaces HTML</a>.</p>
+        
+        <h2>El atributo src</h2>
+        <p>La etiqueta <code>&lt;img&gt;</code> se utiliza para incrustar una imagen en una página HTML. El atributo <code>src</code> especifica la ruta a la imagen que se mostrará:</p>
+        <pre>
+&lt;img src="img_girl.jpg"&gt;
+        </pre>
+        <p>Hay dos formas de especificar la URL en el atributo <code>src</code>:</p>
+        <ol>
+            <li><strong>URL absoluta</strong>: enlaces a una imagen externa alojada en otro sitio web. Ejemplo: <code>src="https://www.w3schools.com/images/img_girl.jpg"</code>.</li>
+            <li><strong>URL relativa</strong>: enlaces a una imagen alojada en el sitio web. En este caso, la URL no incluye el nombre de dominio. Si la URL comienza sin una barra, será relativa a la página actual. Ejemplo: <code>src="img_girl.jpg"</code>. Si la URL comienza con una barra, será relativa al dominio. Ejemplo: <code>src="/images/img_girl.jpg"</code>.</li>
+        </ol>
+        <p><strong>Consejo:</strong> casi siempre es mejor utilizar URL relativas. No se romperán si cambias de dominio.</p>
+        
+        <h2>Los atributos width y height</h2>
+        <p>La etiqueta <code>&lt;img&gt;</code> también debe contener los atributos <code>width</code> y <code>height</code>, que especifican el ancho y la altura de la imagen (en píxeles):</p>
+        <pre>
+&lt;img src="img_girl.jpg" width="500" height="600"&gt;
+        </pre>
+        
+        <h2>El atributo alt</h2>
+        <p>El atributo requerido <code>alt</code> para la etiqueta <code>&lt;img&gt;</code> especifica un texto alternativo para una imagen, si por algún motivo no se puede mostrar la imagen. Esto puede deberse a una conexión lenta, a un error en el atributo <code>src</code> o si el usuario utiliza un lector de pantalla.</p>
+        <pre>
+&lt;img src="img_girl.jpg" alt="Chica con una chaqueta"&gt;
+        </pre>
+        <p><strong>Ejemplo:</strong> Veamos qué sucede si intentamos mostrar una imagen que no existe:</p>
+        <pre>
+&lt;img src="img_typo.jpg" alt="Chica con una chaqueta"&gt;
+        </pre>
+        <p>Aprenderás más sobre imágenes en nuestro capítulo <a href="imagenes.html">Imágenes HTML</a>.</p>
+        
+        <h2>El atributo style</h2>
+        <p>El atributo <code>style</code> se utiliza para agregar estilos a un elemento, como color, fuente, tamaño y más.</p>
+        <pre>
+&lt;p style="color:red;"&gt;Este es un párrafo rojo.&lt;/p&gt;
+        </pre>
+        <p>Aprenderás más sobre los estilos en nuestro capítulo <a href="estilos.html">Estilos HTML</a>.</p>
+        
+        <h2>El atributo lang</h2>
+        <p>Siempre debe incluir el atributo <code>lang</code> dentro de la etiqueta <code>&lt;html&gt;</code> para declarar el idioma de la página web. Esto tiene como objetivo ayudar a los motores de búsqueda y navegadores.</p>
+        <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;body&gt;
+...
+&lt;/body&gt;
+&lt;/html&gt;
+        </pre>
+        <p>También se pueden añadir códigos de país al código de idioma en el atributo <code>lang</code>. De esta forma, los dos primeros caracteres definen el idioma de la página HTML y los dos últimos, el país.</p>
+        <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en-US"&gt;
+&lt;body&gt;
+...
+&lt;/body&gt;
+&lt;/html&gt;
+        </pre>
+        <p>Puedes ver todos los códigos de idioma en nuestra <a href="codigos_idioma.html">Referencia de códigos de idioma HTML</a>.</p>
+        
+        <h2>El atributo title</h2>
+        <p>El atributo <code>title</code> define información adicional sobre un elemento.</p>
+        <p>El valor del atributo de <code>title</code> se mostrará como información sobre herramientas cuando pase el mouse sobre el elemento:</p>
+        <pre>
+&lt;p title="Soy un tooltip"&gt;Este es un párrafo.&lt;/p&gt;
+        </pre>
+        
+        <h2>Sugerencias</h2>
+        <p><strong>Sugerimos:</strong> Utilice siempre atributos en minúsculas. El estándar HTML no requiere nombres de atributos en minúsculas. Sin embargo, W3C recomienda atributos en minúsculas en HTML y exige atributos en minúsculas para tipos de documentos más estrictos como XHTML. En W3Schools siempre utilizamos nombres de atributos en minúsculas.</p>
+        <p><strong>Sugerimos:</strong> Siempre citar los valores de los atributos. El estándar HTML no requiere comillas alrededor de los valores de los atributos. Sin embargo, W3C recomienda comillas en HTML y exige comillas para tipos de documentos más estrictos como XHTML. A veces es necesario utilizar comillas. En este ejemplo, el atributo de <code>title</code> no se mostrará correctamente porque contiene un espacio:</p>
+        <pre>
+&lt;p title="About W3Schools"&gt;
+        </pre>
+        <p>En W3Schools siempre usamos comillas alrededor de los valores de los atributos.</p>
+        <p><strong>¿Comillas simples o dobles?</strong> Las comillas dobles alrededor de los valores de atributos son las más comunes en HTML, pero también se pueden utilizar comillas simples. En algunas situaciones, cuando el propio valor del atributo contiene comillas dobles, es necesario utilizar comillas simples:</p>
+        <pre>
+&lt;p title='John "ShotGun" Nelson'&gt;
+        </pre>
+        <p>O viceversa:</p>
+        <pre>
+&lt;p title="John 'ShotGun' Nelson"&gt;
+        </pre>
+        
+        <h2>Resumen del capítulo</h2>
+        <ul>
+            <li>Todos los elementos HTML pueden tener atributos.</li>
+            <li>El atributo <code>href</code> de <code>&lt;a&gt;</code> especifica la URL de la página a la que va el enlace.</li>
+            <li>El atributo <code>src</code> de <code>&lt;img&gt;</code> especifica la ruta a la imagen que se mostrará.</li>
+            <li>Los atributos <code>width</code> y <code>height</code> proporcionan información sobre el tamaño de las imágenes.</li>
+            <li>El atributo <code>alt</code> de <code>&lt;img&gt;</code> proporciona un texto alternativo para una imagen.</li>
+            <li>El atributo <code>style</code> se utiliza para agregar estilos a un elemento, como color, fuente, tamaño y más.</li>
+            <li>El atributo <code>lang</code> de la etiqueta <code>&lt;html&gt;</code> declara el idioma de la página web.</li>
+            <li>El atributo <code>title</code> define información adicional sobre un elemento.</li>
+        </ul>
+    </main>
+</body>
+</html>
